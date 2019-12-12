@@ -69,6 +69,15 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="server.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LoginServerClassLibrary\LoginServerClassLibrary.csproj">
+      <Project>{d9a5eb7e-f417-41da-8d2e-f12866ffd804}</Project>
+      <Name>LoginServerClassLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
