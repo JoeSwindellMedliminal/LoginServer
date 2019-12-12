@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.960
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginServerConsole", "LoginServerConsole\LoginServerConsole.csproj", "{78B654A3-B8DC-4375-ACC3-3516EBE38ED9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginServerGUI", "LoginServerGUI\LoginServerGUI.csproj", "{D0FFDD19-6150-4E54-BA5C-583FCC1628BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78B654A3-B8DC-4375-ACC3-3516EBE38ED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78B654A3-B8DC-4375-ACC3-3516EBE38ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78B654A3-B8DC-4375-ACC3-3516EBE38ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78B654A3-B8DC-4375-ACC3-3516EBE38ED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0FFDD19-6150-4E54-BA5C-583FCC1628BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0FFDD19-6150-4E54-BA5C-583FCC1628BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0FFDD19-6150-4E54-BA5C-583FCC1628BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0FFDD19-6150-4E54-BA5C-583FCC1628BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C2AEEFE-46E3-4022-84BD-6CAF100BBA15}
+	EndGlobalSection
+EndGlobal
