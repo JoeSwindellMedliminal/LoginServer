@@ -20,9 +20,12 @@ namespace LoginServerConsole
 
             UpStreamServerClass upStreamServerClass = LoadUpStreamServerConfig();
 
-            // TODO: Test Connection
-            MySQLDAL mySQL = ConnectToDB(dbServerClass.GetConnectionString());
-           
+            MySQLDAL mySQL = new MySQLDAL(dbServerClass.GetConnectionString());
+            // TODO: Test Connection         
+
+            if (!mySQL.TestConnection())
+                ChuckError("MySQL Connection test failed!");
+            
 
             // TODO: Bind to Listen Port
 
@@ -33,21 +36,28 @@ namespace LoginServerConsole
             Console.ReadKey();
         }
 
-        public static MySQLDAL ConnectToDB(string connString)
+   
+        public static void SampleQuery(MySQLDAL mySQL)
         {
             try
             {
-                MySQLDAL mySQL = new MySQLDAL(connString);
-                return mySQL;
+                List<List<string>> results = new List<List<string>>();
+                results = mySQL.MakeAQuery("Select * from `accounts` where is_active = 1");
+
+                foreach (List<string> r in results)
+                {
+                    foreach (string row in r)
+                    {
+                        Utilities.WriteLineColoredMessage(row, ConsoleColor.Blue, ConsoleColor.White);
+                    }
+                }
+
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.ToString());
+                ChuckError(ex.ToString());
             }
-
-            return null;
         }
-           
 
 
         public static UpStreamServerClass LoadUpStreamServerConfig()
