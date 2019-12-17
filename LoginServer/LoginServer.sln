@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginServerConsole", "Login
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginServerGUI", "LoginServerGUI\LoginServerGUI.csproj", "{D0FFDD19-6150-4E54-BA5C-583FCC1628BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginServerClassLibrary", "LoginServerClassLibrary\LoginServerClassLibrary.csproj", "{D9A5EB7E-F417-41DA-8D2E-F12866FFD804}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LCM Class Library", "LoginServerClassLibrary\LCM Class Library.csproj", "{D9A5EB7E-F417-41DA-8D2E-F12866FFD804}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

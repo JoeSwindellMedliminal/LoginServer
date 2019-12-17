@@ -61,17 +61,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CharacterToken.cs" />
-    <Compile Include="CharServerClass.cs" />
-    <Compile Include="DatabaseServerClass.cs" />
-    <Compile Include="LogWriterClass.cs" />
+    <Compile Include="classes\DatabaseServerClass.cs" />
+    <Compile Include="classes\UpStreamServerClass.cs" />
     <Compile Include="MySQLDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServerConfig.cs" />
+    <Compile Include="readers\DBConfigReader.cs" />
+    <Compile Include="readers\UpStreamConfigReader.cs" />
     <Compile Include="Utilities.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
